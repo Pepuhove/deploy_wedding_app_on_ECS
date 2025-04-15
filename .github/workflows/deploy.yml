@@ -1,9 +1,9 @@
 name: Deploy Static Website to ECS with Nginx
 
 on:
-  push:
-    branches: [main]
-
+    # push:
+    #     branches: [main]
+    workflow-dispatch:
 jobs:
   sonar:
     name: SonarQube Code Analysis
