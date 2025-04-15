@@ -1,19 +1,3 @@
-#  Workflow succeed 
-![Screenshot (122)](https://github.com/user-attachments/assets/f8ce0ba3-5852-4e44-bbde-6c56283ad3d0)
-<br/>
-<br/>
-
-
-
-
-
-#  Wedding_app 
-
-![Uploading Screenshot (121).png…]()
-
-
-
-
 # 🚀 Deploy Static Website to AWS ECS with Nginx (CI/CD Pipeline)
 
 This project automates the deployment of a static website using **Docker**, **Nginx**, and **AWS ECS (Elastic Container Service)**.
@@ -120,6 +104,15 @@ At the end of the pipeline, a Slack message is sent like this:
  Add Terraform for IaC provisioning (optional)
 
 # 📷 Screenshot
+
+#  Workflow succeed 
+
+![Screenshot (122)](https://github.com/user-attachments/assets/f8ce0ba3-5852-4e44-bbde-6c56283ad3d0)
+<br/>
+
+
+![Screenshot (121)](https://github.com/user-attachments/assets/f13b1457-4a3b-4466-bd6d-bbfbcd358e75)
+
 
 # 🤝 Contributions
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
