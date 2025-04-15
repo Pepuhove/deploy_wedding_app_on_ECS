@@ -1,0 +1,13 @@
+slack-notify:
+    name: Notify Slack
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Notify on Slack
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          ECS_ENDPOINT: http://${{ secrets.ECS_ENDPOINT }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{\"text\":\"✅ *Deployment Complete!*\nYour app is live at: $ECS_ENDPOINT\"}" \
+          $SLACK_WEBHOOK
