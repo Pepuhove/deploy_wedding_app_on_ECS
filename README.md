@@ -108,7 +108,6 @@ At the end of the pipeline, a Slack message is sent like this:
 #  Workflow succeed 
 
 ![Screenshot (122)](https://github.com/user-attachments/assets/f8ce0ba3-5852-4e44-bbde-6c56283ad3d0)
-<br/>
 
 
 ![Screenshot (121)](https://github.com/user-attachments/assets/f13b1457-4a3b-4466-bd6d-bbfbcd358e75)
