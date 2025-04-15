@@ -117,3 +117,16 @@ jobs:
           ecr-repository: ${{ secrets.REPOSITORY }}
           ecs-cluster: ${{ secrets.ECS_CLUSTER }}
           ecs-service: ${{ secrets.ECS_SERVICE }}
+  slack-notify:
+    name: Notify Slack
+    runs-on: ubuntu-latest
+    needs: deploy  # Runs after deploy job
+    steps:
+        - name: Send Endpoint to Slack
+    env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        ECS_ENDPOINT: http://${{ secrets.ECS_ENDPOINT }}  # Replace or make dynamic if possible
+            run: |
+                curl -X POST -H 'Content-type: application/json' \
+                --data "{\"text\":\"✅ *Deployment Complete!* Your app is live at: $ECS_ENDPOINT\"}" \
+                $SLACK_WEBHOOK
