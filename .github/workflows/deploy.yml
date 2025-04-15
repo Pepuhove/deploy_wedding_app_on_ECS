@@ -36,17 +36,12 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
-
-      - name: Build, tag, and push Docker image
-        env:
-          REGISTRY: ${{ secrets.REGISTRY }}
-          REPOSITORY: ${{ secrets.REPOSITORY }}
-          IMAGE_TAG: ${{ secrets.IMAGE_TAG}}
         run: |
-          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
-          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+
+      - name: Pull ECR Image
+        run: |
+          docker pull ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.REPOSITORY }}:${{ secrets.IMAGE_TAG }}
 
   trivy:
     name: Trivy Vulnerability Scan
