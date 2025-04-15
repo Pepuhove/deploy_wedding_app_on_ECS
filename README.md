@@ -18,6 +18,15 @@ and automatic deployment, followed by a Slack notification upon successful deplo
 - 🌐 Hosted on **public ECS IP** (without load balancer)
 
 ---
+# 📷 Screenshot
+
+
+
+![Screenshot (122)](https://github.com/user-attachments/assets/f8ce0ba3-5852-4e44-bbde-6c56283ad3d0)
+
+
+![Screenshot (121)](https://github.com/user-attachments/assets/f13b1457-4a3b-4466-bd6d-bbfbcd358e75)
+
 
 # 🛠️ Tech Stack
 
@@ -103,14 +112,6 @@ At the end of the pipeline, a Slack message is sent like this:
 
  Add Terraform for IaC provisioning (optional)
 
-# 📷 Screenshot
-
-#  Workflow succeed 
-
-![Screenshot (122)](https://github.com/user-attachments/assets/f8ce0ba3-5852-4e44-bbde-6c56283ad3d0)
-
-
-![Screenshot (121)](https://github.com/user-attachments/assets/f13b1457-4a3b-4466-bd6d-bbfbcd358e75)
 
 
 # 🤝 Contributions
