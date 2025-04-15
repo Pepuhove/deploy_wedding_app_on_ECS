@@ -91,7 +91,7 @@ jobs:
         with:
           name: trivy-image-report
           path: trivy-image-report.json
-   deploy:
+  deploy:
             name: Deploy
             runs-on: ubuntu-latest
         
