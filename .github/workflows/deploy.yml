@@ -46,7 +46,7 @@ jobs:
           IMAGE_TAG: ${{ secrets.IMAGE_TAG}}
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
-          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker push ${{ secrets.AWS_ACCOUNT_ID }}.$REGISTRY/$REPOSITORY:$IMAGE_TAG
 
   trivy:
     name: Trivy Vulnerability Scan
