@@ -1,6 +1,6 @@
 #  Workflow succeed 
 
-![Screenshot (123)](![Screenshot (123)](https://github.com/user-attachments/assets/c6075875-a26b-4deb-9b3d-6a56d74eaeac)
+(![Screenshot (123)](https://github.com/user-attachments/assets/c6075875-a26b-4deb-9b3d-6a56d74eaeac
 )
 
 
@@ -8,7 +8,7 @@
 
 #  Wedding_app 
 
-![Screenshot (121)](![Screenshot (121)](https://github.com/user-attachments/assets/854de6f6-8e9d-4f2b-934b-3bf9ae9046bd)
+(![Screenshot (121)](https://github.com/user-attachments/assets/854de6f6-8e9d-4f2b-934b-3bf9ae9046bd)
 )
 
 
