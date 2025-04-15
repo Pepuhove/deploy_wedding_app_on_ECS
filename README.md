@@ -1,3 +1,7 @@
+![Alt text](![Screenshot (123)](https://github.com/user-attachments/assets/641a8e28-f376-495a-8e14-8bed962b7de6)
+)
+![Alt text](![Screenshot (121)](https://github.com/user-attachments/assets/ed932bc3-b2b5-4331-a7e8-4ed7a8abe3a0)
+)
 
 
 # 🚀 Deploy Static Website to AWS ECS with Nginx (CI/CD Pipeline)
