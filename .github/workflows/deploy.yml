@@ -65,7 +65,6 @@ jobs:
 
       - name: Pull ECR Image
         run: |
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
           docker pull ${{ secrets.REGISTRY }}/${{ secrets.REPOSITORY }}:${{ secrets.IMAGE_TAG }}
 
       - name: Run Trivy Scan
