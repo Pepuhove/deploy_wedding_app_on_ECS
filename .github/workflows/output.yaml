@@ -1,0 +1,2 @@
+outputs:
+    endpoint: ${{ steps.get-endpoint.outputs.endpoint }}
