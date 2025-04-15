@@ -32,6 +32,12 @@ jobs:
         secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         account_id: ${{ secrets.AWS_ACCOUNT_ID }}
         region: ${{ secrets.AWS_REGION }}
+        repo: ${{ secrets.REPOSITORY }}
+        tags: ${{ secrets.IMAGE_TAG }}
+        create_repo: true
+        image_scanning_configuration: true
+        set_repo_policy: true
+        repo_policy_file: repo-policy.json
           
 
     - name: Login to Amazon ECR
