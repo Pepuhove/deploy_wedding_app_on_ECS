@@ -23,7 +23,7 @@ and automatic deployment, followed by a Slack notification upon successful deplo
 
 ---
 
-## 📦 Features
+# 📦 Features
 
 - 🔍 **Code Analysis** with [SonarQube](https://www.sonarsource.com/products/sonarqube/)
 - 🐳 **Docker Image Build & Push** to AWS ECR
@@ -34,7 +34,7 @@ and automatic deployment, followed by a Slack notification upon successful deplo
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 - AWS ECS & ECR
 - GitHub Actions
@@ -46,7 +46,7 @@ and automatic deployment, followed by a Slack notification upon successful deplo
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```bash
 .
@@ -61,7 +61,9 @@ and automatic deployment, followed by a Slack notification upon successful deplo
 │       └── main.yml    # GitHub Actions workflow
 
 └── README.md
+
 # 🚀 How It Works
+
 Push to main branch triggers GitHub Actions.
 
 Runs SonarQube for code quality analysis.
@@ -75,10 +77,12 @@ Deploys the image to AWS ECS.
 Sends a Slack message with the live endpoint once deployed.
 
 # 🔐 Secrets Required
+
 To run this workflow, the following secrets must be configured in your GitHub repository:
 
 
 # Secret Name	Description
+
 SONAR_TOKEN	SonarQube authentication token
 SONAR_HOST_URL	SonarQube server URL
 AWS_ACCESS_KEY_ID	AWS access key for deploying to ECS
@@ -92,7 +96,9 @@ ECS_CLUSTER	ECS cluster name
 ECS_SERVICE	ECS service name
 SLACK_WEBHOOK	Slack webhook URL for notifications
 ECS_ENDPOINT	Public IP of ECS task (if static)
+
 # 🐳 Dockerfile Overview
+
 Dockerfile
 Copy
 Edit
