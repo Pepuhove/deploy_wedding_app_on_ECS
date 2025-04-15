@@ -41,7 +41,7 @@ jobs:
 
       - name: Build, tag, and push Docker image
         env:
-          REGISTRY: ${{ steps.REGISTRY }}
+          REGISTRY: ${{ secrets.REGISTRY }}
           REPOSITORY: ${{ secrets.REPOSITORY }}
           IMAGE_TAG: ${{ secrets.IMAGE_TAG}}
         run: |
